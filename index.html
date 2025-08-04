@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open in Browser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            padding: 20px;
+        }
+
+        /* Arrow placed under TikTok 3-dot menu */
+        .arrow {
+            position: fixed;
+            top: 8px; 
+            right: 28px;
+            font-size: 50px;
+            transform: rotate(-45deg); /* Up-right */
+            z-index: 9999;
+        }
+
+        .message {
+            font-size: 1.5em;
+            margin-top: 120px; /* Spacing below arrow */
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        .instructions {
+            font-size: 1em;
+            margin-bottom: 30px;
+            max-width: 90%;
+            line-height: 1.4em;
+            padding: 0 10px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: orange;
+            color: black;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="arrow">⬆</div>
+        <div class="message">🚨 IMPORTANT: TikTok is blocking new customers from reaching Pyro! 🚨</div>
+        <div class="instructions">
+            Tap the <strong>•••</strong> in the top-right corner NOW and select 
+            <strong>“Open in Browser”</strong>.<br><br>
+            Once opened in your browser, click the button below to proceed.
+        </div>
+        <a class="button" href="https://linktr.ee/pyroo" target="_blank">Open Pyro in Browser</a>
+    </div>
+</body>
+</html>
